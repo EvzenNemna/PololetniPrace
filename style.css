@@ -34,9 +34,32 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.carousel {
-    margin-bottom: 50px;
+main.container h1, main.container p{
+    margin-top: 0;
+    padding-top: 30px;
+    margin-left: 70px;
 }
+main {
+    margin: 0;
+}
+.items {
+
+}
+main.container div.items {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer {
+    margin: 0;
+}
+p {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+/* .carousel {
+    margin-bottom: 50px;
+} */
 .border{
     border: 1px solid;
 }
@@ -58,6 +81,11 @@ body {
 .footer {
     background-color: #f2f7fa;
     height: 400px;
+}
+div.footer h1 {
+    margin: 0;
+    padding-top: 35px;
+    padding-left: 30px;
 }
 .header-items {
     margin: 0 20px 0 20px;
@@ -117,6 +145,31 @@ a {
 }
 .topnav .icon {
     display: none;
+}
+/* div.galerie {
+    width: 300px;
+}
+div.galerie img {
+    width: 300px;
+    height: auto;
+} */
+div.gallery {
+    margin: 5px;
+    /* margin-left: 30px; */
+    border: 1px solid #ccc;
+    /* float: left; */
+    width: 300px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+} 
+div.gallery img {
+    width: 100%;
+    height: auto;
+} 
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
