@@ -41,6 +41,7 @@ main.container h1, main.container p{
 }
 main {
     margin: 0;
+    padding-bottom: 35px;
 }
 .items {
 
@@ -48,6 +49,7 @@ main {
 main.container div.items {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 footer {
     margin: 0;
@@ -77,15 +79,53 @@ p {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer {
     background-color: #f2f7fa;
     height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* padding: 35px 70px 10px 70px; */
 }
-div.footer h1 {
+div.footer p, div.footer h3, div.footer a p, div.footer div form {
     margin: 0;
     padding-top: 35px;
-    padding-left: 30px;
+    padding-left: 70px;
+}
+div.footer a p {
+    font-size: 17px;
+    color: #272727;
+}
+div.footer p {
+    font-size: 17px;
+    color: #272727;
+    padding-bottom: 0px;
+}
+div#footer-socnet {
+    padding-left: 70px;
+}
+input#newsletter {
+    margin-bottom: 30px;
+    height: 35px;
+    width: 250px;
+    border: 1px solid #ccc;
+    text-indent: 5px;
+}
+input#newsletter:focus {
+    outline: none;
+    border: 1px solid #777;
+}
+button[type=submit] {
+    height: 30px;
+    width: 100px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+button[type=submit]:hover {
+    border: 1px solid #777;
+    cursor: pointer;
 }
 .header-items {
     margin: 0 20px 0 20px;
@@ -97,7 +137,13 @@ div.footer h1 {
     margin-left: auto;
     margin-right: auto;
 }
-.topnav a {
+.main-topnav {
+    overflow: hidden;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.topnav a, .main-topnav a {
     display: block;
     color: #272727;
     text-align: center;
@@ -111,6 +157,7 @@ div.footer h1 {
 }
 a {
     text-decoration: none;
+    color: #272727;
 }
 .fa {
     color: #272727;
@@ -133,7 +180,7 @@ a {
 .white {
     background-color: white;
 }
-.topnav a:hover {
+.topnav a:hover, .main-topnav a:hover {
     text-decoration: underline;
     color: #272727;
     text-underline-offset: 10px;
@@ -142,6 +189,11 @@ a {
     text-decoration: underline;
     color: #272727;
     text-underline-offset: 10px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 .topnav .icon {
     display: none;
@@ -169,7 +221,10 @@ div.gallery img {
 } 
 div.desc {
     padding: 15px;
-    text-align: center;
+    /* text-align: center; */
+}
+span.price {
+    float: right;
 }
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
