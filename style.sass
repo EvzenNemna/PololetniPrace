@@ -101,6 +101,16 @@ p
 .border
   border: 1px solid
 
+.cart-img
+  width: 150px
+  margin-left: 70px
+
+  /* float: left;
+
+/* p#appendable {
+ *    margin-right: 70px;
+ *}
+
 div.promotion
   margin-top: 35px
   margin-bottom: 30px
@@ -141,6 +151,20 @@ div.promotion
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+
+.cart-buy
+  /* background-color: #f2f7fa;
+  width: 100%
+  padding-top: 20px
+
+div
+  &#pay
+    width: fit-content
+    margin-left: auto
+    margin-right: auto
+
+  &#celkova_cena
+    padding-right: 70px
 
 .footer
   background-color: #f2f7fa
@@ -197,15 +221,29 @@ select#size
   border: 1px solid #ccc
   text-indent: 5px
 
-button#add-to-cart
-  height: 35px
-  width: 250px
-  margin-top: 35px
-  margin-bottom: 35px
-  border: 1px solid #ccc
-  text-indent: 5px
+div.empty
+  width: fit-content
+  margin-left: auto
+  margin-right: auto
+  padding-bottom: 200px
 
-  &:hover
+button
+  &#add-to-cart, &#go-to-payment
+    height: 35px
+    width: 250px
+    margin-top: 35px
+    margin-bottom: 35px
+    border: 1px solid #ccc
+    text-indent: 5px
+
+div#shirt-item
+  display: none
+
+button
+  &#go-to-payment
+    display: none
+
+  &#add-to-cart:hover, &#go-to-payment:hover
     border: 1px solid #777
     cursor: pointer
 
@@ -360,6 +398,16 @@ div
 span.price
   float: right
 
+.cart
+  padding-bottom: 300px
+  display: flex
+  justify-content: space-between
+
+img.large-img
+  width: 1400px
+  margin-left: auto
+  margin-right: auto
+
 @media screen and (max-width: 1024px)
   div
     &.head-img-men, &.head-img-women, &.carousel
@@ -371,6 +419,11 @@ span.price
   .promotion
     display: none
 
+  img.large-img
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+
 @media screen and (max-width: 768px)
   div
     &.head-img-men, &.head-img-women, &.carousel
@@ -379,6 +432,11 @@ span.price
   .footer
     height: fit-content
     padding-bottom: 30px
+
+  img.large-img
+    width: 100%
+    margin-left: auto
+    margin-right: auto
 
 @media screen and (max-width: 600px)
   .topnav a
@@ -413,8 +471,17 @@ span.price
   .footer
     padding-bottom: 30px
 
-  img#product-img
-    width: 100%
+  img
+    &#product-img
+      width: 100%
+
+    &.large-img
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+
+    &.about-img
+      width: 100%
 
 @media screen and (max-width: 375px)
   div.header-items
@@ -444,5 +511,14 @@ span.price
     padding-right: 27px
     padding-bottom: 30px
 
-  img#product-img
-    width: 100%
+  img
+    &#product-img
+      width: 100%
+
+    &.large-img
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+
+    &.about_img
+      width: 100%

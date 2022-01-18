@@ -98,6 +98,14 @@ p {
 .border{
     border: 1px solid;
 }
+.cart-img {
+    width: 150px;
+    margin-left: 70px;
+    /* float: left; */
+}
+/* p#appendable {
+    margin-right: 70px;
+} */
 div.promotion {
     margin-top: 35px;
     margin-bottom: 30px;
@@ -137,6 +145,19 @@ div.promotion img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.cart-buy {
+    /* background-color: #f2f7fa; */
+    width: 100%;
+    padding-top: 20px;
+}
+div#pay {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#celkova_cena{
+    padding-right: 70px;
 }
 .footer {
     background-color: #f2f7fa;
@@ -190,7 +211,13 @@ select#size {
     border: 1px solid #ccc;
     text-indent: 5px;
 }
-button#add-to-cart {
+div.empty {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+}
+button#add-to-cart, button#go-to-payment {
     height: 35px;
     width: 250px;
     margin-top: 35px;
@@ -198,7 +225,10 @@ button#add-to-cart {
     border: 1px solid #ccc;
     text-indent: 5px;
 }
-button#add-to-cart:hover {
+div#shirt-item, button#go-to-payment {
+    display: none;
+}
+button#add-to-cart:hover, button#go-to-payment:hover {
     border: 1px solid #777;
     cursor: pointer;
 }
@@ -357,6 +387,16 @@ div.desc {
 span.price {
     float: right;
 }
+.cart {
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+img.large-img {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media screen and (max-width: 1024px) {
     div.head-img-men, div.head-img-women, div.carousel {
         height: 550px;
@@ -367,6 +407,11 @@ span.price {
     .promotion {
         display: none;
     }
+    img.large-img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media screen and (max-width: 768px) {
     div.head-img-men, div.head-img-women, div.carousel {
@@ -375,6 +420,11 @@ span.price {
     .footer {
         height: fit-content;
         padding-bottom: 30px;
+    }
+    img.large-img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (max-width: 600px) {
@@ -408,6 +458,14 @@ span.price {
     img#product-img {
         width: 100%;
     }
+    img.large-img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img.about-img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 375px) {
     div.header-items {
@@ -435,6 +493,14 @@ span.price {
         padding-bottom: 30px;
     }
     img#product-img {
+        width: 100%;
+    }
+    img.large-img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img.about_img {
         width: 100%;
     }
 }
