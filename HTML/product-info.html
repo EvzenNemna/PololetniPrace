@@ -19,9 +19,9 @@
     <header>
         <div class="header container">
             <div class="header-items">
-                <a href="#" class="fa fa-facebook fa-2x"></a>
-                <a href="#" class="fa fa-instagram fa-2x"></a>
-                <a href="#" class="fa fa-twitter fa-2x"></a>
+                <a href="#" class="fa fa-facebook fa-2x" target="_blank"></a>
+                <a href="#" class="fa fa-instagram fa-2x" target="_blank"></a>
+                <a href="#" class="fa fa-twitter fa-2x" target="_blank"></a>
             </div>
             <div class="header-items" id="header-logo">
                 <h1>Lorem</h1>
@@ -30,7 +30,7 @@
                 <a href="#" class="fa fa-shopping-bag fa-2x right"></a>
             </div>
         </div>
-        <div class="container white">
+        <div class="container white" id="navbar">
             <div class="topnav" id="myTopnav">
                 <a href="index.html">Novinky</a>
                 <div class="dropdown">
@@ -49,42 +49,44 @@
                       <a href="women-subpages/accessories.html">Doplňky</a>
                     </div>
                 </div> 
-                <a href="about.html" class="active">O nás</a>
+                <a href="about.html">O nás</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="carousel">
-            <div class="owl-carousel owl-theme" id="carousel-div">
-                <div class="item item1"></div>
-                <div class="item item2"></div>
-                <div class="item item3"></div>
-                <div class="item item4"></div>
-            </div>
-        </div>
-    </div>
     <main class="container">
-        <div class="items">
-            <div class="about_paragraph">
-                <h1>O nás</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque tincidunt scelerisque libero. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nullam rhoncus aliquam metus. Maecenas sollicitudin. Ut tempus purus at lorem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aenean vel massa quis mauris vehicula lacinia. Duis pulvinar. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Etiam dictum tincidunt diam. Duis condimentum augue id magna semper rutrum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus faucibus molestie nisl. In convallis.
-                </p>
-            </div>
+        <div class="product-wrapper">
             <div>
-                <img src="https://f4.bcbits.com/img/a2095181968_10.jpg" class="about_img">
+                <img src="https://www.reserved.com/media/catalog/product/6/9/6991H-90M-010-1_3.jpg" alt="Cinque Terre" id="product-img">
             </div>
-            <div>
-                <img src="https://www.agionet.cz/media/k2/items/cache/zasilkovna_logo-banner-900px_XL.jpg" class="about_img">
-            </div>
-            <div class="about_paragraph">
-                <h1>Doprava</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque tincidunt scelerisque libero. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nullam rhoncus aliquam metus. Maecenas sollicitudin. Ut tempus purus at lorem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Aenean vel massa quis mauris vehicula lacinia. Duis pulvinar. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Etiam dictum tincidunt diam. Duis condimentum augue id magna semper rutrum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus faucibus molestie nisl. In convallis.
-                </p>
+            <div class="product-text">
+                <h1>Tričko černé</h1>
+                <h3>150,00 Kč</h3>
+                <form action="#">
+                    <label for="size"><h4>Vyberte velikost</h4></label>
+                    <select name="velikost" id="size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="3xl">3XL++</option>
+                    </select>
+                </form>
+                <button type="submit" id="add-to-cart">Přidat do košíku</button>
+                <div class="product-desc">
+                    <h3 id="desc">Popis</h3>
+                    <p id="desc-p">
+                        - žebrovaný kulatý výstřih<br>
+                        - spadlá linie ramen<br>
+                        - krátké rukávy<br>
+                        - boční rozparky<br>
+                        - 100 % bavlny
+                    </p>
+                </div>
             </div>
         </div>
     </main>
